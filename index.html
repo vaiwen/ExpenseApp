@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="graphics">
+            <div id="edit-content">
+                <h1>Edit Expense</h1>
+                <div class="edit-options">
+                    <form action="">
+                        <div class="form-items">
+                            <label for="edit-input-describe">Describe :</label>
+                            <input type="text" id="edit-input-describe" disabled>
+                        </div>
+                        <div class="form-items">
+                            <label for="edit-input-price">Price :</label>
+                            <input type="number" id="edit-input-price" placeholder="USD" disabled>
+                        </div>
+                        <div class="form-items">
+                            <label for="edit-input-category">Category :</label>
+                            <select id="edit-input-category" disabled>
+                                <option value="giyim">Giyim</option>
+                                <option value="gunluk">Günlük</option>
+                                <option value="egitim">Eğitim</option>
+                                <option value="etkinlik">Etkinlik</option>
+                                <option value="ozel">Ozel</option>
+                            </select>
+                        </div>
+                        <div class="form-items">
+                            <label for="edit-input-date">Date :</label>
+                            <input type="date" id="edit-input-date" disabled>
+                        </div>
+                    </form>
+                </div>
+                <button id="edit">Save Expense</button>
+            </div>
+            <hr>
+            <div class="delete">
+                <button id="delete-all">
+                    Delete All Expenses
+                </button>
+            </div>
+        </div>
+        <div id="main-content">
+            <div id="content">
+                <h1>Add Expense</h1>
+                <div class="options">
+                    <form action="">
+                        <div class="form-items">
+                            <label for="input-describe">Describe :</label>
+                            <input type="text" id="input-describe">
+                        </div>
+                        <div class="form-items">
+                            <label for="input-price">Price :</label>
+                            <input type="number" id="input-price" placeholder="USD">
+                        </div>
+                        <div class="form-items">
+                            <label for="input-category">Category :</label>
+                            <select id="input-category">
+                                <option value="giyim">Giyim</option>
+                                <option value="gunluk">Günlük</option>
+                                <option value="egitim">Eğitim</option>
+                                <option value="etkinlik">Etkinlik</option>
+                                <option value="ozel">Ozel</option>
+                            </select>
+                        </div>
+                        <div class="form-items">
+                            <label for="input-date">Date :</label>
+                            <input type="date" id="input-date">
+                        </div>
+                    </form>
+                </div>
+                <button id="add">Add Expense</button>
+            </div>
+            <div class="created">
+                <p class="creator">Created by Vawien</p>
+            </div>
+        </div>
+        <div id="summary">
+            <div class="baslik">
+                <h1>Expenses</h1>
+            </div>
+            <div class="info-box">
+                <div class="ust">
+                    <div class="active" id="describe">
+                        <p>Describe</p>
+                    </div>
+                    <div class="option" id="price">
+                        <p>Price</p>
+                    </div>
+                </div>
+                <div class="alt">
+                    <div class="option" id="category">
+                        <p>Category</p>
+                    </div>
+                    <div class="option" id="date">
+                        <p>Date</p>
+                    </div>
+                </div>
+            </div>
+            <div id="filter">
+                <input type="text" id="filter-search" placeholder="Filter by Describe">
+            </div>
+            <div id="expenses">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+    <script src="functions.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
