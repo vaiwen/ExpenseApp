@@ -44,6 +44,6 @@ const createExpenseItem = (item) => {
 }
 
 const deleteAllExpenses = () => {
-    //localStorage.clear()
+    localStorage.clear()
     alert('all expenses deleted successfully !')
 }

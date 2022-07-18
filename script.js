@@ -25,6 +25,8 @@ class Exp {
     }
 }
 
+expense.category = document.querySelector('#input-category').value
+
 document.querySelector('#input-describe').addEventListener('input', function (e) {
     expense.describe = e.target.value
 })
