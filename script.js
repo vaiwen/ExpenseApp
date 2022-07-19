@@ -124,6 +124,9 @@ filterText.addEventListener('input', function (e) {
         if (deneme == "price") {
             return item[`${deneme}`] == filter
         }
+        else if (deneme == "describe" && filter == "*") {
+            return item
+        }
         else {
             return item[`${deneme}`].includes(filter)
         }
